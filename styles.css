@@ -124,22 +124,76 @@ header {
   font-family: 'Fraunces', serif;
   font-size: 1.3rem;
 }
-/* .image-cnt {
-  border: 2px solid black;
-} */
 
-.order3 {
-  order: 4;
+.yellow-underline {
+  text-decoration: hsl(51, 82%, 76%) 6px solid underline;
 }
 
-.order4 {
-  order: 3;
+.yellow-underline:hover {
+  transition: all 1.5s ease-out;
+  text-decoration: hsl(51, 96%, 67%) 7px solid underline;
+}
+
+.pink-underline {
+  text-decoration: hsl(331, 75%, 72%) 6px solid underline;
+}
+
+.pink-underline:hover {
+  transition: all 1.5s ease-out;
+  text-decoration: hsl(331, 96%, 67%) 7px solid underline;
 }
 
 .image-cnt img {
   width: 100%;
   height: 100%;
 }
+
+.second-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cherry-bg {
+  position: relative;
+}
+
+.cherry-bg-text {
+  color: #24554a;
+}
+.orange-bg {
+  position: relative;
+}
+
+.orange-bg-text {
+  color: #052c3b;
+}
+
+.second-grid-text {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+
+.second-grid-text h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+}
+
+.second-grid-text p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin: 0 100px;
+}
+
+/* TESTIMONIALS */
+
+@media (max-width: 960px) {
+  .header-text {
+    word-wrap: break-word;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -190,16 +244,15 @@ header {
   }
 
   .order3 {
+    order: 4;
+  }
+
+  .order4 {
     order: 3;
   }
-}
 
-.order4 {
-  order: 4;
-}
-
-@media (max-width: 960px) {
-  .header-text {
-    word-wrap: break-word;
+  .second-grid {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
