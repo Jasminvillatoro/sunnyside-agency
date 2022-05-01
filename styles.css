@@ -187,7 +187,30 @@ header {
 }
 
 /* TESTIMONIALS */
+.testimonial-section {
+  text-align: center;
+}
+.title {
+  font-size: 1.5rem;
+  color: #a7aaad;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 20px 0 0 0;
+}
 
+.testimonial-main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  justify-content: space-between;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  height: 100px;
+}
 @media (max-width: 960px) {
   .header-text {
     word-wrap: break-word;
