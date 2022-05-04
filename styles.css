@@ -241,6 +241,11 @@ header {
   font-size: 0.9rem;
 }
 
+/* SECOND GRID */
+.third-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* MEDIA QUERIES */
 @media (max-width: 960px) {
   .header-text {
@@ -316,5 +321,10 @@ header {
 
   .testimonial-cnt {
     padding: 1rem;
+  }
+
+  .third-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
