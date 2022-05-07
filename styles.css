@@ -18,6 +18,26 @@ header {
   text-align: center;
 }
 
+.arrow {
+  position: absolute;
+  left: 50%;
+  animation-name: arrow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    top: 25%;
+  }
+  50% {
+    top: 30%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
 .logo {
   height: 62px;
   padding: 20px;
@@ -297,9 +317,9 @@ footer {
 }
 
 .attribution a {
-  text-decoration: none;
-  color: #000;
+  color: rgb(15, 38, 38);
 }
+
 /* MEDIA QUERIES */
 @media (max-width: 960px) {
   .header-text {
