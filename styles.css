@@ -346,6 +346,7 @@ footer {
   }
 
   .nav-menu {
+    z-index: 1;
     position: fixed;
     right: -300px;
     top: 70px;
@@ -366,6 +367,10 @@ footer {
   .contact-btn {
     background-color: yellow;
     margin-bottom: 20px;
+  }
+
+  .header-text {
+    font-size: 2rem;
   }
 
   .nav-menu.active {
@@ -404,13 +409,13 @@ footer {
 
   @keyframes arrow {
     0% {
-      top: 30%;
+      top: 40%;
     }
     50% {
-      top: 35%;
+      top: 45%;
     }
     100% {
-      top: 30%;
+      top: 40%;
     }
   }
 }
